@@ -12,3 +12,17 @@ I will implement the computer system I wrote on a FPGA later. Currently I am sti
 This post will be updated when I finish.
 
 Cheers!
+
+TODO:
+* ~~01~~
+* 02
+* 03
+* 04
+* 05
+* 06
+* 07
+* 08
+* 09
+* 10
+* 11
+* 12
