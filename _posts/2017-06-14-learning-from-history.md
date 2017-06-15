@@ -18,3 +18,5 @@ Let me give you a recent example and explain why this is unsustainable - the "VP
 Above all, I put freedom of speech as the most fundamental privilege an individual should enjoy, and I hope that one day Chinese government can learn this bitter truth.
 
 [1]: Forbes news ( you can find more on this by googling "VPN ban")
+
+Another observation I had is that not many people know how a thing works even though they have no trouble using it like my father.
