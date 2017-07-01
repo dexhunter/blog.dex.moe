@@ -9,6 +9,7 @@ Recently, I was reading *the innovators* by Walter Isaacson. This is particularl
 
 [Walter talks at Google](https://www.youtube.com/watch?v=rRqLSiLuQgA)
 
+<!--
 # Why China has a unsustainable problem?
 
 I lived in China for more than 20 years now. I have relatives working in the government and lived in a military-restricted area for about 10 years. From my observation and what I have read, Chinese government want a "stable" society which to me is like a brain-dead society because the media is controlled by government and when a really terrible policy comes out, they will broadcast and ask so-called experts explaining why the policy is so "great". Even the media in Hong Kong is somewhat related to the central goverment. Some people will object me saying you are making no sense how could you tell whether a policy is good or bad. This is true to some extent, since as an independent individual, my opinion is biased based on what will benefit me personally, however I think if the policy will affect me, it will definitely affect others as well since we are all Chinese citizens. 
@@ -20,3 +21,5 @@ Above all, I put freedom of speech as the most fundamental privilege an individu
 [1]: Forbes news ( you can find more on this by googling "VPN ban")
 
 Another observation I had is that not many people know how a thing works even though they have no trouble using it like my father.
+
+-->

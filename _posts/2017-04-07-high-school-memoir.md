@@ -1,8 +1,8 @@
+<!--
 ---
 layout: post
 title: "中国高中回忆录 (memoir for high school in China)"
 ---
-
 # 中国高中回忆录 (memoir for high school in China)
 
 这是一篇回忆我在中国高中的文章。
@@ -36,4 +36,4 @@ title: "中国高中回忆录 (memoir for high school in China)"
 * 谨言慎行
 * 三省吾身
 * 相濡以沫,不如相忘于江湖
-
+-->

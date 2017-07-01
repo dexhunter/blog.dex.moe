@@ -15,6 +15,9 @@ But I was determined to learn python at that time (well, actually I did some pro
 
 This is basically the story how I got my first paper. Through this process, I found myself doing the things I always dreamed of - creating new ideas and implementing them. I feel blessed to be part of the project. I will keep working hard and hopefully one day I can really "push human race forward".
 
+<!--
 ## The qulity of research in our university
 
 I am currently in Xi'an Jiaotong-Liverpool Univeristy, Suzhou, China. The quality of research is not very high if you compared with world-known universities. But it is better than average Chinese universities and since our teaching language is English, the communication between academia is easier than a normal Chinese university. However, I am not satisfied with the result. I have two SURF(summer undergraduate research fellowship) projects this summer(one on my name and another I am part-time). I wrote my surf project so I think the one I am doing is of high quality. But I read through the surf list and found a lot of surf projects are BS, the content is like my side-project or even worse. For example, build a selfless-driving car using lego. You don't need to 2 months to do that. A lot of resources are online already and people have built that like thousands of times. Others in other fields. Even though I am probably biased I suppose the content are of low quality in most of research projects in our university. After all, our university is still based in China and limited under Chinese rules.
+
+-->
