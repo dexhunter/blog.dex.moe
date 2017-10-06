@@ -1,5 +1,7 @@
 ---
+layout: post
 title: Learning OpenGL
+math: false
 ---
 
 ## Getting Started
