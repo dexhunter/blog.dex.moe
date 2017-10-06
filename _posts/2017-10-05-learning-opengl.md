@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learning OpenGL
+title: "Learning OpenGL"
 math: false
 ---
 
