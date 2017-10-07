@@ -1,7 +1,7 @@
 # Site settings
 title: Dex Hunter blog 
 description: "Musings of a Computer Scientist."
-baseurl: "/hackme" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dexhunter.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: DexHunter 
 
