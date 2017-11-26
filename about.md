@@ -21,3 +21,5 @@ Besides, I also workout A LOT. I used to think I will be a bodybuilder, but afte
 * My favorite OS: Ubuntu (I am thinking changing to Arch though LOL)
 * My favorite text editor: Vim (I only use vim & zsh, I never get used to other IDEs)
 
+## My identity
+I saw some people use keybase. So [here](https://keybase.io/dexhunter) we are.
