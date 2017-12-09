@@ -52,3 +52,15 @@ int main()
 
 ## Before you go
 Try to write a `CMakeLists.txt` to make compilation eaiser
+
+## Update (Dec. 7th 2017)
+
+Since Assignment 2's deadline is coming, I am re-picking OpenGL. I have switched to `arch` this time (just try out different Linux distribution and found this one is better(with xfce4)).
+
+So in arch the complication command changed. Now it is 
+```
+g++ -o <output name> <input file> -lGL -lglut -lGLU
+```
+You can add `lpthread` if you want. I saw this additional link at [arch bbs](https://bbs.archlinux.org/viewtopic.php?id=195334) but I don't really need to do this.
+
+
