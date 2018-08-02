@@ -132,7 +132,7 @@ ENE is not elixir. It is designed for mail encryption, not full replacement of P
 
 -----
 
-ENE is open-sourced, the code is hosted on [GitHub](https://github.com/quininer/ene). You can find the Chiense version [there](https://quininer.github.io/?ene)
+ENE is open-sourced, the code is hosted on [GitHub](https://github.com/quininer/ene). You can find the Chiense version of this introduction [there](https://quininer.github.io/?ene)
 
 -----
 
