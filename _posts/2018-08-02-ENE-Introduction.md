@@ -7,7 +7,7 @@ tags: cryptograph
 ---
 
 # **E**ncrypt o**n** **E**mail
-*You can find the Chiense version of this introduction [there](https://quininer.github.io/?ene)*
+*You can find the Chiense version of this introduction [there](https://quininer.github.io/?ene) and Rust implementation on [Github](https://github.com/quininer/ene)*
 
 What is ENE?
 ------------
@@ -129,10 +129,6 @@ ENE is not elixir. It is designed for mail encryption, not full replacement of P
     * ENE is not stable! It might change at anytime.
     * The "modern PGP" is still one of the best choices, such as [Sequoia](https://sequoia-pgp.org/).
 
-
------
-
-ENE is open-sourced, the code is hosted on [GitHub](https://github.com/quininer/ene). 
 
 -----
 
