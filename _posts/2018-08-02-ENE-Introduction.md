@@ -43,7 +43,7 @@ Some people might think simply adding a signature solves all the problems. But i
     * When you sign the message with your private key, you have certain responsibilities. You cannot deny the message is from you.
 
 2. Surreptitious Forwarding Attack<sup>3,4</sup>
-    * Carol can separate the signature of Alice, use his own signature instead.
+    * Mallory can separate the signature of Alice, use his own signature instead.
     * Some people might think Sign-then-Encrypt could solve this problem. But if the encryption scheme does not reach CCA<sup>5</sup>, then it still cannot prevent such attacks.
 
 ENE has four authentication schemes, a user can choose the security level freely to meet their goals.
@@ -75,9 +75,9 @@ I don't think I need to repeat telling the importance of identity authentication
 
 In fact, OpenPGP has its integrity verification scheme MDC<sup>11</sup>, but in many applications it serves only as warnings, and there is SEIP downgrade attack<sup>12</sup>. While in ENE, we use a more state-of-the-art method AEAD to keep integrity verified.
 
-The research for AEAD has been conducted for many years<sup>12</sup>. More security properties have been proposed such as Nonce-misuse Resistant<sup>13</sup>.
+The research for AEAD has been conducted for many years<sup>13</sup>. More security properties have been proposed such as Nonce-misuse Resistant<sup>14</sup>.
 
-Due to the stateless property of mails, we could only generate nonce randomly. For some encryption algorithms, the effect of nonce reuse is devastating such as AES-GCM <sup>14</sup>.
+Due to the stateless property of mails, we could only generate nonce randomly. For some encryption algorithms, the effect of nonce reuse is devastating such as AES-GCM <sup>15</sup>.
 Although we may do not have enough amount of emails to start a birthday attack, using an AEAD of Nonce-misuse Resistant can make us immune to this problem.
 
 
@@ -90,7 +90,7 @@ A well-known fact is that quantum computer can break all popular public key algo
 There are generally two ways to defend against quantum adversary.
 
 1. Use Pre-Shared Key
-2. Use Post-quantum key exchange<sup>15</sup>
+2. Use Post-quantum key exchange<sup>16</sup>
 
 Considering the use case for mails, it is not practical to use pre-shared key. Therefore, using Post-quantum algorithm is a better choice.
 
@@ -103,7 +103,7 @@ No!
 This is always space for improvements:
 
 * Subkey support
-* Full Forward Secrecy<sup>16,17</sup>
+* Full Forward Secrecy<sup>17,18</sup>
 * <ruby>Group<rt>Mailing List</rt></ruby> Encryption Support
 * Denfense against Side-Channel attack
 * Protocol Formal Verification
@@ -116,7 +116,7 @@ Why not use ENE?
 
 ENE is not elixir. It is designed for mail encryption, not full replacement of PGP.
 
-1. Web of Trust<sup>18</sup>
+1. Web of Trust<sup>19</sup>
     * I am not going to discuss the pros and cons of Web of Trust.
     * ENE is not a trust system, it does not consider how to build trust relations.
     * If needed, you can use PGP to sign ENE public key.
@@ -125,8 +125,7 @@ ENE is not elixir. It is designed for mail encryption, not full replacement of P
     * Of course, you can also use [pbp](https://boats.gitlab.io/blog/post/signing-commits-without-gpg/).
 3. Encrypt large file
     * The context of mail is normally not too big, ENE thus does not consider this.
-    * However, this does not mean GPG is suitable for file encryption.
-4. Need reliable, stable encryption methods
+    * However, this does not mean GPG is suitable for file encryption.  4. Need reliable, stable encryption methods
     * ENE is not stable! It might change at anytime.
     * The "modern PGP" is still one of the best choices, such as [Sequoia](https://sequoia-pgp.org/).
 
@@ -149,10 +148,10 @@ ENE is open-sourced, the code is hosted on [GitHub](https://github.com/quininer/
 10. [AEAD variant of the SIGMA-I protocol](https://tools.ietf.org/id/draft-selander-ace-cose-ecdhe-08.html#protocol)
 11. [Modification Detection Code Packet](https://tools.ietf.org/html/rfc4880#page-52)
 12. [OpenPGP SEIP downgrade attack](https://www.ietf.org/mail-archive/web/openpgp/current/msg08285.html<Paste>)
-12. [Authenticated encryption](https://en.wikipedia.org/wiki/Authenticated_encryption)
-13. [Nonce misuse resistance 101](https://www.lvh.io/posts/nonce-misuse-resistance-101.html)
-14. [Nonce-Disrespecting Adversaries: Practical Forgery Attacks on GCM in TLS](https://eprint.iacr.org/2016/475.pdf)
-15. [Post-quantum cryptography](https://en.wikipedia.org/wiki/Post-quantum_cryptography)
-16. [Forward Secure Asynchronous Messaging from Puncturable Encryption](http://cs.jhu.edu/~imiers/pdfs/forwardsec.pdf)
-17. [0-RTT Key Exchange with Full Forward Secrecy](https://eprint.iacr.org/2017/223.pdf)
-18. [Web of trust](https://en.wikipedia.org/wiki/Web_of_trust)
+13. [Authenticated encryption](https://en.wikipedia.org/wiki/Authenticated_encryption)
+14. [Nonce misuse resistance 101](https://www.lvh.io/posts/nonce-misuse-resistance-101.html)
+15. [Nonce-Disrespecting Adversaries: Practical Forgery Attacks on GCM in TLS](https://eprint.iacr.org/2016/475.pdf)
+16. [Post-quantum cryptography](https://en.wikipedia.org/wiki/Post-quantum_cryptography)
+17. [Forward Secure Asynchronous Messaging from Puncturable Encryption](http://cs.jhu.edu/~imiers/pdfs/forwardsec.pdf)
+18. [0-RTT Key Exchange with Full Forward Secrecy](https://eprint.iacr.org/2017/223.pdf)
+19. [Web of trust](https://en.wikipedia.org/wiki/Web_of_trust)
