@@ -61,7 +61,7 @@ to generate a test2-chain but notice multiple chains are runned in one docker co
 
 You can check the `parentChainAuthorities` at `test-chain/template/authorities.list`. The example only uses the auth of node0 created by default.
 
-## Check the stauts (OPTIONAL, skip if you are using an existing chain such as test chain)
+## Check the status (OPTIONAL, skip if you are using an existing chain such as test chain)
 
 An elegant way to do this is install [cita-cli](https://github.com/cryptape/cita-cli)
 
