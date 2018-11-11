@@ -19,6 +19,8 @@ layout: default
     {{ content }}
   </div>
 
+  <b>This page last modified at: {{page.last_modified_at | date: '%Y-%m-%d %H:%M:%S'}}</b>
+
   {% if page.math != false %}
    {% include mathjax.html %}
   {% endif %}

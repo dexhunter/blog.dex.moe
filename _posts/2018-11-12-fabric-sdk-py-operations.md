@@ -2,7 +2,7 @@
 layout: post
 title: "使用fabric-sdk-py对网络操作"
 date: 2018-11-12 03:54:18
-categories: fabric
+categories: tutorial
 tags: fabric tutorial
 ---
 
@@ -107,11 +107,17 @@ print(response==True)
 ### 1.1 操作示范
 
 1. 将`configtxgen`加入到`PATH`路径下
+
 ![](https://fars.ee/wNYN.png)
+
 2. 开启fabric客户端，确认客户端里没有Channel
+
 ![](https://fars.ee/Giad.png)
+
 3. 进行建立Channel操作
+
 ![](https://fars.ee/AVXa.png)
+
 再次查看客户端Channel，发现新的Channel已经建立
 
-
+## 2 Peer
