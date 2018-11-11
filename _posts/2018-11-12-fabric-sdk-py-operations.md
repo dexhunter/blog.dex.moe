@@ -2,7 +2,7 @@
 layout: post
 title: "使用fabric-sdk-py对网络操作"
 date: 2018-11-12 03:54:18
-categories: tutorial
+categories: fabric
 tags: fabric tutorial
 ---
 
@@ -59,8 +59,7 @@ $ docker-compose -f test/fixtures/docker-compose-2orgs-4peers-tls.yaml up
 
 ## 1. 在Fabric网络中Channel的操作
 
-Use sdk to create a new channel and let peers joinit.
-使用sdk建立新的Channel并让peers
+* 使用sdk建立新的Channel并让peers加入
 
 ```python
 from hfc.fabric import Client
@@ -107,17 +106,183 @@ print(response==True)
 ### 1.1 操作示范
 
 1. 将`configtxgen`加入到`PATH`路径下
-
 ![](https://fars.ee/wNYN.png)
 
 2. 开启fabric客户端，确认客户端里没有Channel
-
 ![](https://fars.ee/Giad.png)
 
 3. 进行建立Channel操作
-
 ![](https://fars.ee/AVXa.png)
 
-再次查看客户端Channel，发现新的Channel已经建立
+    再次查看客户端Channel，发现新的Channel已经建立
 
-## 2 Peer
+4. 加入Peers
+
+## 2. 在Fabric网络中进行Chaincode相关操作
+
+* 使用sdk进行install, instantiate和invoke chaincode的操作
+
+```python
+from hfc.fabric import Client
+
+cli = Client(net_profile="test/fixtures/network.json")
+org1_admin = cli.get_user('org1.example.com', 'Admin')
+
+# Install Chaincode to Peers
+# This is only needed if to use the example chaincode inside sdk
+import os
+gopath_bak = os.environ.get('GOPATH', '')
+gopath = os.path.normpath(os.path.join(
+                      os.path.dirname(os.path.realpath('__file__')),
+                      'test/fixtures/chaincode'
+                     ))
+os.environ['GOPATH'] = os.path.abspath(gopath)
+
+# The response should be true if succeed
+response = cli.chaincode_install(
+               requestor=org1_admin,
+               peer_names=['peer0.org1.example.com',
+                           'peer1.org1.example.com']
+               cc_path='github.com/example_cc',
+               cc_name='example_cc',
+               cc_version='v1.0'
+               )
+
+# Instantiate Chaincode in Channel, the response should be true if succeed
+args = ['a', '200', 'b', '300']
+response = cli.chaincode_instantiate(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com'],
+               args=args,
+               cc_name='example_cc',
+               cc_version='v1.0'
+               )
+
+# Invoke a chaincode
+args = ['a', 'b', '100']
+# The response should be true if succeed
+response = cli.chaincode_invoke(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com'],
+               args=args,
+               cc_name='example_cc',
+               cc_version='v1.0'
+               )
+
+```
+
+## 3. Query信息
+
+```python
+from hfc.fabric import Client
+
+cli = Client(net_profile="test/fixtures/network.json")
+org1_admin = cli.get_user('org1.example.com', 'Admin')
+
+# Query Peer installed chaincodes, make sure the chaincode is installed
+response = cli.query_installed_chaincodes(
+               requestor=org1_admin,
+               peer_names=['peer0.org1.example.com']
+               )
+
+"""
+# An example response:
+
+chaincodes {
+  name: "example_cc"
+  version: "1.0"
+  path: "github.com/example_cc"
+}
+"""
+
+# Query Peer Joined channel
+response = cli.query_channels(
+               requestor=org1_admin,
+               peer_names=['peer0.org1.example.com']
+               )
+
+"""
+# An example response:
+
+channels {
+  channel_id: "businesschannel"
+}
+"""
+
+# Query Channel Info
+response = cli.query_info(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com']
+               )
+
+# Query Block by tx id
+# example txid of instantiated chaincode transaction
+response = cli.query_block_by_txid(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com'],
+               tx_id=cli.txid_for_test
+                                  )
+```
+
+* 根据区块哈希值来访问区块
+
+```python
+from hfc.fabric import Client
+
+cli = Client(net_profile="test/fixtures/network.json")
+org1_admin = cli.get_user('org1.example.com', 'Admin')
+
+# first get the hash by calling 'query_info'
+response = cli.query_info(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com'],
+                           )
+
+test_hash = response.currentBlockHash
+
+response = cli.query_block_by_hash(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com'],
+               block_hash=test_hash
+                           )
+```
+
+* 根据区块编号访问区块
+
+```python
+from hfc.fabric import Client
+
+cli = Client(net_profile="test/fixtures/network.json")
+org1_admin = cli.get_user('org1.example.com', 'Admin')
+
+# Query Block by block number
+response = cli.query_block(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com'],
+               block_number='1'
+               )
+
+# Query Transaction by tx id
+# example txid of instantiated chaincode transaction
+response = cli.query_transaction(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com'],
+               tx_id=cli.txid_for_test
+               )
+
+# Query Instantiated Chaincodes
+response = cli.query_instantiated_chaincodes(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com']
+               )
+```
+
