@@ -6,6 +6,8 @@ categories: fabric
 tags: fabric tutorial
 ---
 
+*本文基于[fabric-sdk-py官方文档](https://github.com/hyperledger/fabric-sdk-py/blob/master/docs/tutorial.md)翻译，如有更多疑问，请移步至Rocketchat #fabric-sdk-py，谢谢！*
+
 ## 0.操作前准备
 
 ### 0.1　安装 Fabric SDK
