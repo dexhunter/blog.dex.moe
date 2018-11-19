@@ -288,3 +288,51 @@ response = cli.query_instantiated_chaincodes(
                )
 ```
 
+```python
+# first get the hash by calling 'query_info'
+response = cli.query_info(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com'],
+                           )
+
+test_hash = response.currentBlockHash
+
+response = cli.query_block_by_hash(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com'],
+               block_hash=test_hash
+                           )
+                           
+# Query Block by block number
+response = cli.query_block(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com'],
+               block_number='1'
+               )
+
+# Query Transaction by tx id
+# example txid of instantiated chaincode transaction
+response = cli.query_transaction(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com'],
+               tx_id=cli.txid_for_test
+               )
+
+# Query Instantiated Chaincodes
+response = cli.query_instantiated_chaincodes(
+               requestor=org1_admin,
+               channel_name='businesschannel',
+               peer_names=['peer0.org1.example.com']
+               )
+               
+# Query Peer Joined channel
+response = cli.query_channels(
+               requestor=org1_admin,
+               peer_names=['peer0.org1.example.com']
+               )
+```
+
