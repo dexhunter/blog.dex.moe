@@ -4,6 +4,7 @@ description: "Musings of a Computer Scientist."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dexhunter.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: DexHunter 
+future: true
 
 # Build settings
 markdown: kramdown
@@ -14,6 +15,7 @@ google_analytics: UA-96340754-2
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-last-modified-at
 exclude:
   - Gemfile
   - Gemfile.lock
