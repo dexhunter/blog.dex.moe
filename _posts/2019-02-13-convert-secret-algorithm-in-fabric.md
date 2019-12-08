@@ -124,7 +124,7 @@ git checkout release-1.4.0
 
 2. apply the patch
 
-```
+```bash
 git clone git@github.com:flyinox/fabric-sm-patch.git
 git am fabric-sm-patch/fabric-sm-patch
 ```
