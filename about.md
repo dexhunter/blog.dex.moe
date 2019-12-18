@@ -36,6 +36,9 @@ I lived in a military-restricted area in China before (2005-2015).
 I scored 145/150 on English for <a href="https://en.wikipedia.org/wiki/National_College_Entrance_Examination">Gaokao</a>.
 </li>
 <li>
+My father is from Teochew and my mother is from Jiangxi. My grandparents and my father speaks Teochew at home. However, I am not able to speak <ruby>潮州話<rt>Teochew</rt></ruby> (only a few phrases). My native language is <ruby>普通话<rt>Mandarin</rt></ruby>. English is full professional working proficiency and I can speak some <ruby>suomen kieli<rt>Finnish</rt></ruby>, <ruby>日本語<rt>Japanese</rt></ruby> and <ruby>español<rt>Spanish</rt></ruby>.
+</li>
+<li>
 I can do a lot sports including but not limited to tennis, table tennis, swimming, golf, basketball, football (American/non-American), badminton, archery, baseball. <i>Disclosure: My highest grade of a course in university is body building (95/100)</i>
 </li>
 <li>
