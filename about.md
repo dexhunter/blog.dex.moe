@@ -68,7 +68,7 @@ Besides, I also workout A LOT. I used to think I will be a bodybuilder, but afte
 * My favorite laptop brand: thinkpad t series (currently)
 * My favorite OS: ~~Ubuntu~~Arch Linux & Windows Dual Boot 
 * My favorite text editor: ~~Vim~~VSCode with Vim
-* My favorite book: A LOT! You probably can find some books I read on [books.dex.moe](books.dex.moe)
+* My favorite book: A LOT! You probably can find some books I read on [books.dex.moe](https://books.dex.moe)
 
 ## My identity
 
