@@ -13,7 +13,7 @@ My name is <ruby>許/许<rt>xǔ</rt>迪<rt>dí</rt>星<rt>xīng</rt></ruby> or D
 
 
 <details> 
-<summary>Some interesting facts about myself</summary>
+<summary>Some interesting facts about myself *click* </summary>
 
 <ul> 
 
