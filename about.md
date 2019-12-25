@@ -3,6 +3,9 @@ layout: post
 title: Knowns & Unknowns
 permalink: /about/
 ---
+
+<!-- You find it! Thank you for the effort! -->
+
 ***
 Hi there, thank you for your effort and interest in wanting to know what I really am. 
 
