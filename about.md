@@ -87,4 +87,30 @@ One of my GPG pub key is [here](/assets/pubkey.asc).
 I do not have a `whereXis` website yet, but you can always find me by sending an email to<br>
 `echo ZGl4aW5neHVAZ21haWwuY29tCg== | base64 --decode`.
 
+## Friends
+
+Society is composed of living human beings, so is the Internet. I find a lot interesting people online and even without the necessity of meeting them in person, I learned a lot from their blogs / projects / papers / comments. And here is <ruby>友链<rt>friend exchange list</rt></ruby>. 
+
+* 晴神: [Qing Zhang's blog](https://hurrialice.github.io/)
+* Marlin: [Notes on Learning Flight](https://weblog.marlin.pub/)
+* Peter Cai: [Typeblog](https://typeblog.net/)
+* Xie Yuheng小<strike>夜</strike>药壶老师: [Ones Inner Universe](https://inner.xieyuheng.now.sh/)
+* Alan Chang: [CTF write-ups](https://tcode2k16.github.io/blog/)
+* 高策哥哥: [gaocegege](http://gaocegege.com/Blog/about/)
+* 邱巨: [PRIEWIENV's blog](https://blog.priewienv.me/)
+* 王老板: [Jeff Wang](https://magi003769.github.io/)
+* 铮尧: [rooftrellen](http://www.rooftrellen.me/en/)
+* 黄鼠: [FiveYellowMice](https://fiveyellowmice.com/)
+* 五秒风: [5swind](https://5swind.github.io/)
+* Haoxuan Wang: [shellcottage](http://shellcottage.me/)
+* Di Zhen: [JoKerDii](https://jokerdii.github.io/)
+* quininer奎妮老师: [icebox](https://github.com/quininer)
+* Chenhui: [Link's Workspace](https://linkwoong.github.io/)
+* Auxy: [Auxy's Blog](http://www.auxy.xyz/)
+* Makito: [Makito's Notebook](https://keep.moe)
+* 千千w: [wwyqianqian](https://wwyqianqian.github.io/)
+
+*If you want to be added, just leave a comment :-)*
+
+
 *Last updated: Jan.1<sup>st</sup> 2020*
