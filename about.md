@@ -89,26 +89,30 @@ I do not have a `whereXis` website yet, but you can always find me by sending an
 
 ## Friends
 
-Society is composed of living human beings, so is the Internet. I find a lot interesting people online and even without the necessity of meeting them in person, I learned a lot from their blogs / projects / papers / comments. And here is <ruby>友链<rt>friend exchange list</rt></ruby>. 
+Society is composed of living human beings, so is the Internet. I find a lot interesting people online and even without the necessity of meeting them in person, I learned a lot from their blogs / projects / papers / comments. And here is <ruby>友链<rt>friend exchange list</rt></ruby>.  &#9654; indicates met in person.
 
-* 晴神: [Qing Zhang's blog](https://hurrialice.github.io/)
-* Marlin: [Notes on Learning Flight](https://weblog.marlin.pub/)
-* Peter Cai: [Typeblog](https://typeblog.net/)
+* &#9654;晴神: [Qing Zhang's blog](https://hurrialice.github.io/)
+* &#9654;Marlin: [Notes on Learning Flight](https://weblog.marlin.pub/)
+* &#9654;Peter Cai: [Typeblog](https://typeblog.net/)
 * Xie Yuheng小<strike>夜</strike>药壶老师: [Ones Inner Universe](https://inner.xieyuheng.now.sh/)
-* Alan Chang: [CTF write-ups](https://tcode2k16.github.io/blog/)
-* 高策哥哥: [gaocegege](http://gaocegege.com/Blog/about/)
-* 邱巨: [PRIEWIENV's blog](https://blog.priewienv.me/)
-* 王老板: [Jeff Wang](https://magi003769.github.io/)
-* 铮尧: [rooftrellen](http://www.rooftrellen.me/en/)
-* 黄鼠: [FiveYellowMice](https://fiveyellowmice.com/)
-* 五秒风: [5swind](https://5swind.github.io/)
-* Haoxuan Wang: [shellcottage](http://shellcottage.me/)
-* Di Zhen: [JoKerDii](https://jokerdii.github.io/)
+* &#9654;Alan Chang: [CTF write-ups](https://tcode2k16.github.io/blog/)
+* &#9654;高策哥哥: [gaocegege](http://gaocegege.com/Blog/about/)
+* &#9654;邱巨: [PRIEWIENV's blog](https://blog.priewienv.me/)
+* &#9654;王老板: [Jeff Wang](https://magi003769.github.io/)
+* &#9654;铮尧: [rooftrellen](http://www.rooftrellen.me/en/)
+* &#9654;黄鼠: [FiveYellowMice](https://fiveyellowmice.com/)
+* &#9654;五秒风: [5swind](https://5swind.github.io/)
+* &#9654;Haoxuan Wang: [shellcottage](http://shellcottage.me/)
+* &#9654;Di Zhen: [JoKerDii](https://jokerdii.github.io/)
 * quininer奎妮老师: [icebox](https://github.com/quininer)
-* Chenhui: [Link's Workspace](https://linkwoong.github.io/)
-* Auxy: [Auxy's Blog](http://www.auxy.xyz/)
-* Makito: [Makito's Notebook](https://keep.moe)
+* &#9654;Chenhui: [Link's Workspace](https://linkwoong.github.io/)
+* &#9654;Auxy: [Auxy's Blog](http://www.auxy.xyz/)
+* &#9654;Makito: [Makito's Notebook](https://keep.moe)
 * 千千w: [wwyqianqian](https://wwyqianqian.github.io/)
+* &#9654;夏娜那: [VOID001's WOWO](https://void-shana.moe/)
+* &#9654;哈利橙: [Harry Chen's Blog](https://harrychen.xyz/)
+* &#9654;姨夫: [jackyifu](https://jackyyf.com/)
+* &#9654;KK: [KK](https://ikk.me/)
 
 *If you want to be added, just leave a comment :-)*
 
