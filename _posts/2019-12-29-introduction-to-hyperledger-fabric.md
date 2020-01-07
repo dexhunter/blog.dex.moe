@@ -10,14 +10,14 @@ Most contents are adapted from [official hyperledger website](https://www.hyperl
 
 ---
 
-## What is Hyperledger?
+## What is Hyperledger<sup>1,2</sup>?
 
 > Hyperledger is an open source collaborative effort created to advance cross-industry blockchain technologies.
 
 超级账本(Hyperledger)是一个致力于推动跨产业区块链技术发展的开源平台。依托于Linux基金会，超级账本项目吸引了包括IBM、Intel、Cisco、DAH、摩根大通、R3、甲骨文、百度、腾讯等在内的众多科技和金融巨头的参与贡献。其应用实践囊括了金融、银行、物联网(IoT)、供应链等诸多领域。成立两年多时间以来，超级账本得到了广泛的关注和飞速的发展，目前有近三百家企业会员。超级账本的开源代码和技术，也成为分布式账本领域的首选。
 
 
-## What is Fabric?
+## What is Fabric<sup>2</sup>?
 
 ![](/assets/images/fabric.png)
 
@@ -203,7 +203,7 @@ message ChaincodeAction {
 }
 ```
 
-#### 交易背书的流程
+#### 交易背书的流程<sup>3</sup>
 
 ![](/assets/images/fabric_tx_flow.png)
 
@@ -405,3 +405,4 @@ MSP主要如图所示，主要由以下几个组成：
 
 1. [Hyperledger Docs](https://hyperledger-fabric.readthedocs.io/)
 2. [Blockchain Guide](https://github.com/yeasy/blockchain_guide)
+3. Androulaki, E., Barger, A., Bortnikov, V., Cachin, C., Christidis, K., De Caro, A., Enyeart, D., Ferris, C., Laventman, G., Manevich, Y. and Muralidharan, S., 2018, April. Hyperledger fabric: a distributed operating system for permissioned blockchains. In *Proceedings of the Thirteenth EuroSys Conference* (p. 30). ACM. [available here](https://dl.acm.org/doi/10.1145/3190508.3190538)
