@@ -118,4 +118,4 @@ Society is composed of living human beings, so is the Internet. I find a lot int
 *If you want to be added, just leave a comment :-)*
 
 
-*Last updated: Jan.1<sup>st</sup> 2020*
+*Last updated: Feb.10<sup>th</sup> 2020*
