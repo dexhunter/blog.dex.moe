@@ -113,6 +113,7 @@ Society is composed of living human beings, so is the Internet. I find a lot int
 * &#9654;哈利橙: [Harry Chen's Blog](https://harrychen.xyz/)
 * &#9654;姨夫: [jackyifu](https://jackyyf.com/)
 * &#9654;KK: [KK](https://ikk.me/)
+* &#9654;Pani: [Poi](https://blog.poi.cat/about)
 
 *If you want to be added, just leave a comment :-)*
 
