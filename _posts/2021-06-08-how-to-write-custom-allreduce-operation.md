@@ -1,12 +1,10 @@
 ---
 layout: post
-title: "How to Write A Custom Allreduce Operation in Horovod"
+title: "How to Write Custom Allreduce Operator in Horovod"
 date: 2021-06-08 21:11:02
 categories: tutorial
 tags: horovod distributed machine-learning allreduce algorithm
 ---
-
-# How to Write Custom Allreduce Operator in Horovod
 
 ## Prequisites
 
