@@ -328,7 +328,7 @@ bool CustomNCCLHierarchicalAllreduce::Enabled(const ParameterManager& param_mana
 ```
 
 4. Navigate to `paramter_manager.h` and `parameter_mangager.cc` and add/modify the corresponding `CustomHierarchicalAllreduce` function including
-    * `bool HierarchicalAllreduce() const;``
+    * `bool HierarchicalAllreduce() const;`
     * `void SetHierarchicalAllreduce(bool value, bool fixed=false);`
     * `Parameter::ParameterManager()`
     * `bool ParameterManger::CustomHierarchicalAllreduce(...)`
