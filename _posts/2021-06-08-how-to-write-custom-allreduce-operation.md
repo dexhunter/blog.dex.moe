@@ -46,6 +46,7 @@ For example, we want to write our custom hierarchical allreduce operator (`NCCL_
 1. Navigate to `nccl_operations.cc`
 2. Find `NCCLAllreduce::Execute`
 3. Replace Code with CustomNCCLHierarchicalAllreduceOp
+
 ```cpp
 #if HAVE_MPI
 Status
@@ -170,7 +171,8 @@ NCCLHierarchicalAllreduce::Execute(std::vector<TensorTableEntry>& entries,
 
 1. Navigate to `nccl_operations.h`
 2. Inherit from `NCCLAllreduce` and define a custom operator such as `CustomNCCLHierarchicalAllreduce` and define the public function name as same
-```cpp=
+
+```cpp
 #if HAVE_MPI
 class CustomNCCLHierarchicalAllreduce : public NCCLAllreduce {
 public:
@@ -192,7 +194,9 @@ private:
 };
 #endif
 ```
+
 3. Write the implementation of the custom defined operation in `nccl_operations.cc` with both `Execute` and `Enabled` member function
+
 ```cpp
 #if HAVE_MPI
 Status
@@ -322,6 +326,7 @@ bool CustomNCCLHierarchicalAllreduce::Enabled(const ParameterManager& param_mana
 }
 #endif
 ```
+
 4. Navigate to `paramter_manager.h` and `parameter_mangager.cc` and add/modify the corresponding `CustomHierarchicalAllreduce` function including
     * `bool HierarchicalAllreduce() const;``
     * `void SetHierarchicalAllreduce(bool value, bool fixed=false);`
@@ -334,7 +339,7 @@ bool CustomNCCLHierarchicalAllreduce::Enabled(const ParameterManager& param_mana
     * ...
     
 5. Navigate to `operations.cc`. Since the `CustomNCCLHierarchicalAllreduce` is triggered at runtime, the order for `CustomNCCLHierarchicalAllreduce` should be higher than `NCCLHierarchicalAllreduce` such as
-```cpp=
+```cpp
 #elif HAVE_NCCL && HOROVOD_GPU_ALLREDUCE == 'N'
     adasum_ops.push_back(std::shared_ptr<AllreduceOp>(new AdasumGpuAllreduceOp(&mpi_context, &nccl_context, &gpu_context, &state)));
 
@@ -349,11 +354,11 @@ bool CustomNCCLHierarchicalAllreduce::Enabled(const ParameterManager& param_mana
 Also need to set flag for custom hierarchical allreduce.
 6. After configuring C++ code, we can configure the Python `runner`
 7. At line 41 of `horovod/horovod/runner/__init__.py` add
-```python=
+```python
     self.custom_hierarchical_allreduce = None
 ```
 8. At line 328 of `horovod/horovod/runner/lauch.py` add
-```python=
+```python
     group_hierarchical_allreduce.add_argument('--custom-hierarchical-allreduce',
                                               action=make_override_true_action(override_args),
                                               help='Perform custom hierarchical allreduce between workers instead of '
@@ -363,15 +368,15 @@ Also need to set flag for custom hierarchical allreduce.
                                                    'local gather.')
 ```
 9. At line 23 of `horovod/horovod/runner/common/util/config_parser.py` add
-```python=
+```python
 CUSTOM_HOROVOD_HIERARCHICAL_ALLREDUCE = 'CUSTOM_HOROVOD_HIERARCHICAL_ALLREDUCE'
 ```
 line 87
-```python=
+```python
         _set_arg_from_config(args, 'custom_hierarchical_allreduce', override_args, params)
 ```
 line 187
-```python=
+```python
     _add_arg_to_env(env, CUSTOM_HOROVOD_HIERARCHICAL_ALLREDUCE, args.custom_hierarchical_allreduce, identity)
 ```
 10. For running custom hierarchical allreduce operation, use one of the following commands:
@@ -385,9 +390,10 @@ line 187
 
 To compile the new custom operator, execute the following (coupled with Pytorch for example):
 
-```bash=
+```bash
 $ rm -rf build/ dist/
 $ pip uninstall -y horovod
 $ HOROVOD_NCCL_HOME=<path_to_nccl> HOROVOD_GPU_OPERATIONS=NCCL HOROVOD_WITH_PYTORCH=1 HOROVOD_WITHOUT_TENSORFLOW=1 HOROVOD_WITHOUT_MXNET=1 python setup.py install
 ```
+
 *Note: for multiple open-mpi/nccl versions installed, try setting `export PATH=$PATH:<path_to_openmpi>` and `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<path_to_nccl>`*
