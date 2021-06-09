@@ -20,6 +20,8 @@ h2{text-decoration: underline;}
 * 12:33 PM
 * Start writing my worklog, following [brson's style](https://brson.github.io/worklog.html)
 * 01:25 PM
+* Clock Out
+* 11:12 PM
 
 
 ## 2021-06-08
