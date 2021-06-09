@@ -4,8 +4,37 @@ title: Worklog
 permalink: /worklog/
 ---
 
+<style>
+h2{text-decoration: underline;}
+</style>
+
+## 2021-06-11
+
+## 2021-06-10
+
 ## 2021-06-09
 
+* Clock In (HKBU)
+* 11:01 AM
+* Record Allreduce Experiment
+* 12:33 PM
 * Start writing my worklog, following [brson's style](https://brson.github.io/worklog.html)
-* 1:25 PM
+* 01:25 PM
 
+
+## 2021-06-08
+
+* Clock Out (HKBU)
+* 10:03 PM
+* Wrote [customop tutorial](./_posts/2021-06-08-how-to-write-custom-allreduce-operation.md)
+* 09:33 PM
+* Clock In (HKBU)
+* 09:00 AM
+
+## 2021-06-07
+
+* Collect Real World Smart Contracts Examples
+
+---
+
+*more info found on my Github*

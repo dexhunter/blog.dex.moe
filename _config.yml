@@ -1,5 +1,5 @@
 # Site settings
-title: Dex Hunter's blog 
+title: Dex's blog 
 description: "Musings of a computer scientist."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.dex.moe" # the base hostname & protocol for your site, e.g. http://example.com
