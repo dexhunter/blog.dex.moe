@@ -12,6 +12,13 @@ h2{text-decoration: underline;}
 
 ## 2021-06-10
 
+* Clock In (HKBU)
+* 11:09 AM
+* Smart Contract Collection
+* 11:35 PM
+* Clock Out (HKBU)
+* 11:40 PM
+
 ## 2021-06-09
 
 * Clock In (HKBU)
