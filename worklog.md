@@ -16,6 +16,8 @@ h2{text-decoration: underline;}
 
 * Clock In (HKBU)
 * 09:19 AM
+* Bi-weekly Meeting
+* 10:00 AM
 
 ## 2021-06-10
 

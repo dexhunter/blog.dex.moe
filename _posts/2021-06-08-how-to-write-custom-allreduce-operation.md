@@ -23,7 +23,7 @@ $ git clone https://github.com/horovod/horovod.git
 * Install third party modules
 ```
 $ cd horovod
-$ git submodule --init --recursive update
+$ git submodule update--init --recursive
 ```
 * *Recommended*: Use a virtual environment
 ```
