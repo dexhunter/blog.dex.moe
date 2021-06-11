@@ -8,16 +8,20 @@ permalink: /worklog/
 h2{text-decoration: underline;}
 </style>
 
-## 2021-06-11
-
 > TODO
 > 1. python api for hierarchical allreduce (dynamic)
 > 2. Smart Contacts Collection
 
+## 2021-06-12
+
+
+
+## 2021-06-11
+
 * Clock In (HKBU)
 * 09:19 AM
-* Bi-weekly Meeting
-* 10:00 AM
+* Clock Out (HKBU)
+* 10:00 PM
 
 ## 2021-06-10
 
