@@ -14,12 +14,15 @@ h2{text-decoration: underline;}
 
 ## 2021-06-12
 
-
+* Clock In (HKBU)
+* 8:22 AM
 
 ## 2021-06-11
 
 * Clock In (HKBU)
 * 09:19 AM
+* Biweekly Meeting
+* 10:00 AM
 * Clock Out (HKBU)
 * 10:00 PM
 
