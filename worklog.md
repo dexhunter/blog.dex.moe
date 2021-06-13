@@ -16,6 +16,8 @@ h2{text-decoration: underline;}
 
 * Clock In (HKBU)
 * 1:41 PM
+* 11:17 PM
+* Clock Out (HKBU)
 
 ## 2021-06-12
 
