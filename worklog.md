@@ -16,6 +16,12 @@ h2{text-decoration: underline;}
 
 * Clock In (HKBU)
 * 10:31 AM
+* Meeting (Hyperledger PWSG)
+  * difference between tape & caliper
+  * different size of payload/chaincode test on tape
+  * record query (read-only) tps
+* Clock Out (HKBU)
+*   
 
 ## 2021-06-14
 
