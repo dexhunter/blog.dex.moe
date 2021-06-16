@@ -12,6 +12,16 @@ h2{text-decoration: underline;}
 > 1. python api for hierarchical allreduce (dynamic)
 > 2. Smart Contacts Collection
 
+## 2021-06-16
+
+* Clock In (HKBU)
+* 10:35 AM
+* Meeting (Shaohuai)
+  * use `time` to re-test
+  * add a custom op 
+  * op time comparison
+  * report
+
 ## 2021-06-15
 
 * Clock In (HKBU)
@@ -21,7 +31,7 @@ h2{text-decoration: underline;}
   * different size of payload/chaincode test on tape
   * record query (read-only) tps
 * Clock Out (HKBU)
-*   
+* 11:42 PM
 
 ## 2021-06-14
 
