@@ -12,6 +12,11 @@ h2{text-decoration: underline;}
 > 1. python api for hierarchical allreduce (dynamic)
 > 2. Smart Contacts Collection
 
+## 2021-06-23
+
+* Clock In (HKBU)
+* 02:46 PM
+
 ## 2021-06-22
 
 * Clock In (HKBU)
