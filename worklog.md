@@ -8,9 +8,18 @@ permalink: /worklog/
 h2{text-decoration: underline;}
 </style>
 
-> TODO
-> 1. python api for hierarchical allreduce (dynamic)
-> 2. Smart Contacts Collection
+## 2021-06-25
+
+
+* smart contracts report in chinese
+* allreduce algorithms bar chart
+* > TODO: dynamic allreduce algorithms
+ 
+## 2021-06-24
+
+* Bi-weekly Meeting
+* allreduce algorithms comparison report
+* smart contracts collection report
 
 ## 2021-06-23
 
