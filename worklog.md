@@ -8,8 +8,13 @@ permalink: /worklog/
 h2{text-decoration: underline;}
 </style>
 
-## 2021-06-25
+## 2021-06-26 & 2021-06-27
 
+* update allreduce experiment results
+* > TODO1: Chinese report of smart contracts benchmark & analysis
+* > TODO2: dynamic allreduce algorithms
+
+## 2021-06-25
 
 * smart contracts report in chinese
 * allreduce algorithms bar chart
