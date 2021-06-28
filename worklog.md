@@ -8,6 +8,11 @@ permalink: /worklog/
 h2{text-decoration: underline;}
 </style>
 
+> TODO(dex): ZH/EN report of smart contracts
+> Test tape/caliper performance
+> allreduce algorithm comparison
+> dynamic allreduce algorithm python API towards horovod
+
 ## 2021-06-28
 
 * Update allreduce algorithm comparison report
@@ -15,14 +20,11 @@ h2{text-decoration: underline;}
 ## 2021-06-26 & 2021-06-27
 
 * update allreduce experiment results
-* > TODO1: Chinese report of smart contracts benchmark & analysis
-* > TODO2: dynamic allreduce algorithms
 
 ## 2021-06-25
 
 * smart contracts report in chinese
 * allreduce algorithms bar chart
-* > TODO: dynamic allreduce algorithms
  
 ## 2021-06-24
 
