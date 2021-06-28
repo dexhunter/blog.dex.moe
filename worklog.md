@@ -8,6 +8,10 @@ permalink: /worklog/
 h2{text-decoration: underline;}
 </style>
 
+## 2021-06-28
+
+* Update allreduce algorithm comparison report
+
 ## 2021-06-26 & 2021-06-27
 
 * update allreduce experiment results
