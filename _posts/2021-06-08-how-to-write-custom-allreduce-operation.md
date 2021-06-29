@@ -6,7 +6,7 @@ categories: tutorial
 tags: horovod distributed machine-learning allreduce algorithm
 ---
 
-## Prequisites
+## [Prequisites](#prep)
 
 * Version: Python >= 3.6
 * Install CMake, e.g.
@@ -33,15 +33,15 @@ $ . hvdenv/bin/activate
 * Install Tensorflow, Pytorch and/or MXNet
 * Download/Install NCCL2/MPI
 
-## Intro
+## [Intro](#Intro)
 
 As documented in [Horovod Contributor Guide](https://horovod.readthedocs.io/en/stable/contributors_include.html#adding-custom-operations), the base allreduce operation is `AllreduceOp` which is definted at [`collective_operations.cc`](https://github.com/horovod/horovod/blob/master/horovod/common/ops/collective_operations.h#L51)
 
-## Methodology
+## [Methodology](#Methodology)
 
 For example, we want to write our custom hierarchical allreduce operator (`NCCL_REDUCE`+`NCCL_ALLREDUCE`+`NCCL_BCAST`) based on the existing one (`NCCL_REDUCESCATTER`+`MPI_ALLREDUCE`+`NCCL_ALLGATHER`).
 
-### 1 Hot-fix
+### [1 Hot-fix](#1-hot-fix)
 
 1. Navigate to `nccl_operations.cc`
 2. Find `NCCLAllreduce::Execute`
@@ -167,7 +167,7 @@ NCCLHierarchicalAllreduce::Execute(std::vector<TensorTableEntry>& entries,
 }
 ```
 
-### 2 Define CustomOp with A Different Name
+### [2 Define CustomOp with A Different Name](#2-define-customop)
 
 1. Navigate to `nccl_operations.h`
 2. Inherit from `NCCLAllreduce` and define a custom operator such as `CustomNCCLHierarchicalAllreduce` and define the public function name as same
@@ -386,7 +386,7 @@ line 187
 *Note: If there are problems relating to the environment, try to set the following environment variables `HOROVOD_NCCL_HOME=<path_to_nccl>`, `PATH=$PATH:<path_to_openmpi>`,`LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<path_to_nccl>`*
 *Note2: Add a timeline to record the events is also recommended, set `--timeline-filename=<path_to_timeline_file>` for `horovodrun` or `-x HOROVOD_TIMELINE=<path_to_timeline_file>` for `mpirun`*
 
-## Compilation
+## [Compilation](#Compilation)
 
 To compile the new custom operator, execute the following (coupled with Pytorch for example):
 
