@@ -9,9 +9,9 @@ h2{text-decoration: underline;}
 </style>
 
 > TODO(dex): 
-> Update tape
-> Test tape/caliper performance
-> dynamic allreduce algorithm python API towards horovod
+> * Update tape
+> * Test tape/caliper performance
+> * dynamic allreduce algorithm python API towards horovod
 
 ## 2021-07-01 & 2021-07-02
 
