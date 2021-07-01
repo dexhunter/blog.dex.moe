@@ -8,10 +8,20 @@ permalink: /worklog/
 h2{text-decoration: underline;}
 </style>
 
-> TODO(dex): ZH/EN report of smart contracts
+> TODO(dex): 
+> Update tape
 > Test tape/caliper performance
-> allreduce algorithm comparison
 > dynamic allreduce algorithm python API towards horovod
+
+## 2021-07-01 & 2021-07-02
+
+* Have a look at tape source code
+
+## 2021-06-29 & 2021-06-30
+
+* Update horovod results
+* Plot according to the requirements
+* ZH/EN report of performance benchmarks & smart contracts (sorted by industry)
 
 ## 2021-06-28
 
