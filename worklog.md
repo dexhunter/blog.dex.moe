@@ -13,6 +13,10 @@ h2{text-decoration: underline;}
 > * Test tape/caliper performance
 > * dynamic allreduce algorithm python API towards horovod
 
+## 2021-07-03 & 2021-07-03
+
+* update Tape code
+
 ## 2021-07-01 & 2021-07-02
 
 * Have a look at tape source code
