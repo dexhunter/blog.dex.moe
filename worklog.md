@@ -16,7 +16,10 @@ h2{text-decoration: underline;}
 
 ## 2021-07-03 & 2021-07-03
 
-* update Tape code
+* Understand the [channel](https://colobu.com/2016/04/14/Golang-Channels/) in golang
+* Read Tape Source Code
+* TODO: Add Transaction Latency to Tape
+  * [related issue](https://github.com/Hyperledger-TWGC/tape/issues/94)
 
 ## 2021-07-01 & 2021-07-02
 
