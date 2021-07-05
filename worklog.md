@@ -12,6 +12,7 @@ h2{text-decoration: underline;}
 > * Update tape
 > * Test tape/caliper performance
 > * dynamic allreduce algorithm python API towards horovod
+> * update personal website
 
 ## 2021-07-03 & 2021-07-03
 
