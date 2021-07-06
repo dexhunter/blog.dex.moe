@@ -14,7 +14,17 @@ h2{text-decoration: underline;}
 > * dynamic allreduce algorithm python API towards horovod
 > * update personal website
 
-## 2021-07-03 & 2021-07-03
+## 2021-07-05 & 3032-07-06
+
+* Went through ['A tour of go'](https://tour.golang.org/)
+  * concurrency
+  * More types
+* Participated in hyperledger-twgc weekly meeting
+  * add transaction latency to tape
+    * modify blockcollector.go
+  * alternative: use dashboard to record latency instead of tool
+
+## 2021-07-03 & 2021-07-04
 
 * Understand the [channel](https://colobu.com/2016/04/14/Golang-Channels/) in golang
 * Read Tape Source Code
