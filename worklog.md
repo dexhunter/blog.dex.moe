@@ -14,7 +14,7 @@ h2{text-decoration: underline;}
 > * dynamic allreduce algorithm python API towards horovod
 > * update personal website
 
-## 2021-07-05 & 3032-07-06
+## 2021-07-05 & 2021-07-06
 
 * Went through ['A tour of go'](https://tour.golang.org/)
   * concurrency
