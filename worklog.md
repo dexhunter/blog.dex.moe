@@ -8,11 +8,20 @@ permalink: /worklog/
 h2{text-decoration: underline;}
 </style>
 
-> TODO(dex): 
-> * Update tape
-> * Test tape/caliper performance
+> TODO 
+> * set up prometheus & grafana for hyperledger fabric
+> * write a draft paper for smart contract performance analysis
+> * check fastfarbci paper
+> * check performance analysis tools for ethereum
+> * determine another blockchain framework for comparison
 > * dynamic allreduce algorithm python API towards horovod
 > * update personal website
+
+## 2021-07-07 & 2021-07-08 & 2021-07-09
+
+* update tape
+* summarize the difference between caliper & tape
+* [bi-weekly meeting report](https://hackmd.io/TuDR6yCcSOKHbwIfMiryDg)
 
 ## 2021-07-05 & 2021-07-06
 
