@@ -17,11 +17,19 @@ h2{text-decoration: underline;}
 > * dynamic allreduce algorithm python API towards horovod
 > * update personal website
 
+## 2021-07-12
+
+
+
+## 2021-07-10 & 2021-07-11
+
+* enjoy the weekend
+
 ## 2021-07-07 & 2021-07-08 & 2021-07-09
 
 * update tape
 * summarize the difference between caliper & tape
-* [bi-weekly meeting report](https://hackmd.io/TuDR6yCcSOKHbwIfMiryDg)
+* bi-weekly meeting report
 
 ## 2021-07-05 & 2021-07-06
 
