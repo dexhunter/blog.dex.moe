@@ -16,16 +16,16 @@ h2{text-decoration: underline;}
 > * determine another blockchain framework for comparison
 > * dynamic allreduce algorithm python API towards horovod
 > * update personal website
-> * apply for OCBC hackit
 > * prepare for linux system summer course
 
 ## 2021-07-12
 
+* applied for OCBC hackit
 
 
 ## 2021-07-10 & 2021-07-11
 
-* enjoy the weekend
+* enjoyed the weekend
 
 ## 2021-07-07 & 2021-07-08 & 2021-07-09
 
