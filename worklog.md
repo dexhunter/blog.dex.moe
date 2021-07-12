@@ -15,7 +15,7 @@ h2{text-decoration: underline;}
 > * check performance analysis tools for ethereum
 > * determine another blockchain framework for comparison
 > * dynamic allreduce algorithm python API towards horovod
-> * update personal website
+> * update personal website (dex.moe ---follow---> changwei.me)
 > * prepare for linux system summer course
 
 ## 2021-07-12
