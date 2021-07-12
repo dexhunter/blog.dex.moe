@@ -16,6 +16,8 @@ h2{text-decoration: underline;}
 > * determine another blockchain framework for comparison
 > * dynamic allreduce algorithm python API towards horovod
 > * update personal website
+> * apply for OCBC hackit
+> * prepare for linux system summer course
 
 ## 2021-07-12
 
