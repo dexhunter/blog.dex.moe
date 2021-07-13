@@ -14,9 +14,14 @@ h2{text-decoration: underline;}
 > * check fastfarbci paper
 > * check performance analysis tools for ethereum
 > * determine another blockchain framework for comparison
+> * test performance on new server/cluster (fabric & ethereum)
 > * dynamic allreduce algorithm python API towards horovod
 > * update personal website (dex.moe ---follow---> changwei.me)
 > * prepare for linux system summer course
+
+## 2021-07-13 & 2021-07-14
+
+
 
 ## 2021-07-12
 
