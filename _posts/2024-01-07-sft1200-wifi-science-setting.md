@@ -13,7 +13,7 @@ tags: wifi router tutorial
 export url='https://gh.jwsc.eu.org/master' && sh -c "$(curl -kfsSl $url/install.sh)" && source /etc/profile &> /dev/null
 ```
 
-设置好以后登录 [ttp://192.168.8.1:9999/ui/#/proxies](http://192.168.8.1:9999/ui/#/proxies) 就可以访问了，注意不是31
+设置好以后登录 [http://192.168.8.1:9999/ui/#/proxies](http://192.168.8.1:9999/ui/#/proxies) 就可以访问了，注意不是31
 
 
 ## 其他
