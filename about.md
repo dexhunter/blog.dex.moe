@@ -60,7 +60,7 @@ My father was adopted by <ruby>his parents<rt>my grandparents</rt> </ruby> and f
 
 ## What is a normal day of yours?
 
-Mostly research and coding. I love to know how something works and why it works. I am driven by new technology and I belittle money and fame, even though I need money to live on. But since one of my researches is on portfolio management and we did online trading at real market (cryptocurrencies, forex, etc.), I think I will be able to afford myself and my interests for now.
+Mostly research and coding. I love to know how something works and why it works. I am driven by new technology and I belittle money and fame, even though I need money to live on. These days I am a Member of Technical Staff at Weco AI in London, building recursively self-improving AI agents. In [AIDE²](https://www.weco.ai/blog/first-evidence-of-recursive-self-improvement) we let an agent rewrite the code of AIDE, the ML agent I co-authored, and kept a rewrite only when it scored higher. It found seven better versions. More about my work is on [dex.moe](https://dex.moe).
 
 Besides, I also workout A LOT. I used to think I will be a *bodybuilder*, but after I learned to program, this becomes a far-away dream, though I do want to have six-packs. If you ever see me at gym, feel free to come and say hello :)
 
@@ -68,7 +68,7 @@ Besides, I also workout A LOT. I used to think I will be a *bodybuilder*, but af
 
 * My favorite movie: *The Life of Brian* by *Monty Python*
 * My favorite language: ~~Python~~Rust
-* My favorite laptop brand: thinkpad T series (currently T470p)
+* My favorite laptop brand: thinkpad T series (T470p as of 2020)
 * My favorite OS: ~~Ubuntu~~Arch Linux & Windows Dual Boot 
 * My favorite text editor: ~~Vim~~VSCode with Vim
 * My favorite book(s):
@@ -85,7 +85,7 @@ One of my GPG pub key is [here](/assets/pubkey.asc).
 ## Contact
 
 I do not have a `whereXis` website yet, but you can always find me by sending an email to<br>
-`echo ZGl4aW5neHVAZ21haWwuY29tCg== | base64 --decode`.
+`echo aUBkZXgubW9lCg== | base64 --decode`.
 
 ## Friends
 
@@ -118,4 +118,4 @@ Society is composed of living human beings, so is the Internet. I find a lot int
 *If you want to be added, just leave a comment :-)*
 
 
-*Last updated: Feb.10<sup>th</sup> 2020*
+*Last updated: Oct.13<sup>th</sup> 2026*
