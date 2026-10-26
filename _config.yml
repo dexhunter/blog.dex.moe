@@ -17,7 +17,7 @@ utterances:
 
 # GoatCounter site code (the MYCODE in MYCODE.goatcounter.com). Powers the
 # footer page-view counter; leave empty to disable.
-goatcounter: ""
+goatcounter: "dexhunter"
 
 # Universal Analytics (UA-*) stopped collecting data in July 2023 and its
 # inline loader would be blocked by the CSP in _includes/head.html.
