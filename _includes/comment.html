@@ -4,14 +4,14 @@
         <div id="disqus_thread"></div>
         <script type="text/javascript">
             var disqus_config = function () {
-            this.page.url = '{{ page.url | absolute_url }}';
-            this.page.identifier = '{{ page.url | absolute_url }}';
+            this.page.url = {{ page.url | absolute_url | jsonify }};
+            this.page.identifier = {{ page.url | absolute_url | jsonify }};
             };
 
             (function() {
             var d = document, s = d.createElement('script');
 
-            s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
+            s.src = 'https://' + {{ site.disqus.shortname | jsonify }} + '.disqus.com/embed.js';
 
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
@@ -20,9 +20,9 @@
     {% endif %}
     {% if site.comment-support == "utterances" %}
         <script src="https://utteranc.es/client.js"
-            repo="{{ site.utterances.repo }}"
-            issue-term="{{ site.utterances.issue-term }}"
-            theme="{{ site.utterances.theme }}"
+            repo="{{ site.utterances.repo | escape }}"
+            issue-term="{{ site.utterances.issue-term | escape }}"
+            theme="{{ site.utterances.theme | escape }}"
             crossorigin="anonymous"
             async>
         </script>

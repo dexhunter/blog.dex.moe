@@ -18,7 +18,9 @@ utterances:
     issue-term: pathname
     theme: github-light
 
-google_analytics: UA-96340754-2
+# Universal Analytics (UA-*) stopped collecting data in July 2023 and its
+# inline loader would be blocked by the CSP in _includes/head.html.
+# google_analytics: UA-96340754-2
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -26,3 +28,6 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - Makefile
+  - easygen.py
+  - vendor
