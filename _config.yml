@@ -10,9 +10,6 @@ comment-support: utterances
 # Build settings
 markdown: kramdown
 theme: minima 
-disqus:
-    shortname: dexhunter
-
 utterances:
     repo: dexhunter/blog.dex.moe
     issue-term: pathname
