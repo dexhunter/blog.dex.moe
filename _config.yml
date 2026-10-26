@@ -19,9 +19,8 @@ utterances:
 # footer page-view counter; leave empty to disable.
 goatcounter: "dexhunter"
 
-# Universal Analytics (UA-*) stopped collecting data in July 2023 and its
-# inline loader would be blocked by the CSP in _includes/head.html.
-# google_analytics: UA-96340754-2
+# GA4 web stream for this blog (production only).
+google_analytics: G-VZBYFXB76V
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -32,3 +31,4 @@ exclude:
   - Makefile
   - easygen.py
   - vendor
+  - README.md
