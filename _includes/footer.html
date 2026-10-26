@@ -3,6 +3,14 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
+      {%- if site.goatcounter and jekyll.environment == "production" %}
+      {%- assign gc_endpoint = "https://" | append: site.goatcounter | append: ".goatcounter.com" %}
+      <script data-goatcounter="{{ gc_endpoint }}/count"
+              async src="https://gc.zgo.at/count.v5.js"
+              integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"
+              crossorigin="anonymous"></script>
+      <script src="{{ "/assets/js/pageviews.js" | relative_url }}" defer></script>
+      {%- endif %}
       <div class="footer-col footer-col-1">
         <ul class="social-media-list">
           {% if site.github_username %}
@@ -15,6 +23,11 @@
 
       <div class="footer-col footer-col-3">
         <p>{{ site.description | escape }}</p>
+        {%- if site.goatcounter %}
+        <p id="pageviews" data-endpoint="https://{{ site.goatcounter | escape }}.goatcounter.com" hidden>
+          Page views: <span class="pageviews-count"></span>
+        </p>
+        {%- endif %}
       </div>
     </div>
 

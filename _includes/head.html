@@ -3,16 +3,16 @@
   {%- comment -%}
     GitHub Pages cannot send custom response headers, so the security policy
     is delivered via <meta>. Keep the allow-lists in sync with the third-party
-    scripts used in _includes/ (utterances, MathJax).
+    scripts used in _includes/ (utterances, MathJax, GoatCounter).
     Note: frame-ancestors, report-uri and sandbox are ignored in <meta>.
   {%- endcomment -%}
   {%- capture csp -%}
     default-src 'self';
-    script-src 'self' https://utteranc.es https://cdn.jsdelivr.net;
+    script-src 'self' https://utteranc.es https://cdn.jsdelivr.net{% if site.goatcounter %} https://gc.zgo.at{% endif %};
     style-src 'self' 'unsafe-inline';
     img-src 'self' data: https:;
     font-src 'self' https://cdn.jsdelivr.net;
-    connect-src 'self';
+    connect-src 'self'{% if site.goatcounter %} https://{{ site.goatcounter }}.goatcounter.com{% endif %};
     frame-src https://utteranc.es;
     object-src 'none';
     base-uri 'self';
