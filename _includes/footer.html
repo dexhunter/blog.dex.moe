@@ -3,12 +3,15 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
+      {%- if site.goatcounter and jekyll.environment == "production" %}
+      {%- assign gc_endpoint = "https://" | append: site.goatcounter | append: ".goatcounter.com" %}
+      <script data-goatcounter="{{ gc_endpoint }}/count"
+              async src="https://gc.zgo.at/count.v5.js"
+              integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"
+              crossorigin="anonymous"></script>
+      <script src="{{ "/assets/js/pageviews.js" | relative_url }}" defer></script>
+      {%- endif %}
       <div class="footer-col footer-col-1">
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-        <span id="busuanzi_container_page_pv">Page View <span id="busuanzi_value_page_pv"></span> Times <br>(starts from 06/25/2021)</span>
-      </div>
-
-      <div class="footer-col footer-col-2">
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -20,6 +23,11 @@
 
       <div class="footer-col footer-col-3">
         <p>{{ site.description | escape }}</p>
+        {%- if site.goatcounter %}
+        <p id="pageviews" data-endpoint="https://{{ site.goatcounter | escape }}.goatcounter.com" hidden>
+          Page views: <span class="pageviews-count"></span>
+        </p>
+        {%- endif %}
       </div>
     </div>
 
